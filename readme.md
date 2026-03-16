@@ -5,9 +5,12 @@ A minimal JavaScript + Tailwind CSS template powered by Vite, created by [JLHamm
 ## Getting Started
 
 1. Clone the repo
-2. Run `npm install`
-3. Open in VS Code — accept the recommended extensions prompt
-4. Run `npm run dev` to start developing
+2. Use Node.js 20+ (`node -v`)
+3. Open the project folder in your editor of choice (VS Code recommended)
+4. Open a terminal in the project root (if you're using VS Code: Terminal -> New Terminal)
+5. If you're using VS Code, accept the recommended extensions prompt
+6. Run `npm install`
+7. Run `npm run dev` to start developing
 
 ## Adapting for a New Project
 
@@ -26,12 +29,12 @@ A set of lightweight DOM utility functions is included in `src/utils/`. Note tha
 | `get(target)`                   | Query a DOM element by selector                |
 | `create(el, classes)`           | Create a new DOM element with optional classes |
 | `set(element, target)`          | Append one or more elements to a target        |
-| `remove(target)`                | Remove a DOM element by selector               |
+| `remove(target)`                | Remove a DOM element by selector or reference  |
 | `addClass(element, classes)`    | Add one or more classes to an element          |
 | `removeClass(element, classes)` | Remove one or more classes from an element     |
 | `toggleClass(element, classes)` | Toggle one or more classes on an element       |
 | `setText(element, text)`        | Set the text content of an element             |
-| `setHTML(element, html)`        | Set the inner HTML of an element               |
+| `setHTML(element, html)`        | Set sanitized HTML on an element               |
 
 ## Scripts
 
@@ -40,3 +43,4 @@ A set of lightweight DOM utility functions is included in `src/utils/`. Note tha
 | `npm run dev`     | Start development server |
 | `npm run build`   | Build for production     |
 | `npm run preview` | Preview production build |
+| `npm run lint`    | Run ESLint checks        |
