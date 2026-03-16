@@ -2,6 +2,10 @@
 
 A minimal JavaScript + Tailwind CSS template powered by Vite, created by [JLHammer](https://github.com/JLHammer/)
 
+## Purpose
+
+This template is intended for quickly starting small JavaScript projects with Tailwind CSS and sensible development defaults.
+
 ## Getting Started
 
 1. Clone the repo
@@ -50,3 +54,5 @@ Note: `setHTML` does not sanitize content. Only use it with trusted HTML.
 | `npm run lint`         | Run ESLint checks                |
 | `npm run format`       | Format the project with Prettier |
 | `npm run format:check` | Check formatting with Prettier   |
+
+If `npm run format:check` reports style issues on first clone, run `npm run format` once and re-run the check.

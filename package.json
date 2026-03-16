@@ -1,5 +1,6 @@
 {
   "name": "template-js-tw",
+  "description": "JavaScript and Tailwind CSS template powered by Vite, with ESLint and Prettier configured for development.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
