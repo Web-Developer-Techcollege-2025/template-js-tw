@@ -11,6 +11,7 @@ A minimal JavaScript + Tailwind CSS template powered by Vite, created by [JLHamm
 5. If you're using VS Code, accept the recommended extensions prompt
 6. Run `npm install`
 7. Run `npm run dev` to start developing
+8. Run `npm run lint` to verify everything is set up correctly
 
 ## Adapting for a New Project
 
@@ -18,7 +19,8 @@ A minimal JavaScript + Tailwind CSS template powered by Vite, created by [JLHamm
 2. Replace `public/favicon-placeholder.png` — swap in your own static assets
 3. Update `index.html` — change the `<title>`
 4. Keep or delete the utility functions in `src/utils/` — use what you need, remove what you don't
-5. Clear out `main.js` — delete everything after `import './style.css'`, then either keep `const app = get('#app');` as your entry point (and keep the `get` import) or remove it too if you're not using the `get` util
+5. Treat `main.js` as demo starter code — keep what you want, then delete the rest. At minimum, delete everything after `import './style.css'`, then either keep `const app = get('#app');` as your entry point (and keep the `get` import) or remove it too if you're not using the `get` util
+6. Run `npm run lint` after your first changes to catch simple mistakes early
 
 ## Utils
 
@@ -34,13 +36,17 @@ A set of lightweight DOM utility functions is included in `src/utils/`. Note tha
 | `removeClass(element, classes)` | Remove one or more classes from an element     |
 | `toggleClass(element, classes)` | Toggle one or more classes on an element       |
 | `setText(element, text)`        | Set the text content of an element             |
-| `setHTML(element, html)`        | Set sanitized HTML on an element               |
+| `setHTML(element, html)`        | Set inner HTML on an element                   |
+
+Note: `setHTML` does not sanitize content. Only use it with trusted HTML.
 
 ## Scripts
 
-| Command           | Description              |
-| ----------------- | ------------------------ |
-| `npm run dev`     | Start development server |
-| `npm run build`   | Build for production     |
-| `npm run preview` | Preview production build |
-| `npm run lint`    | Run ESLint checks        |
+| Command                | Description                      |
+| ---------------------- | -------------------------------- |
+| `npm run dev`          | Start development server         |
+| `npm run build`        | Build for production             |
+| `npm run preview`      | Preview production build         |
+| `npm run lint`         | Run ESLint checks                |
+| `npm run format`       | Format the project with Prettier |
+| `npm run format:check` | Check formatting with Prettier   |
