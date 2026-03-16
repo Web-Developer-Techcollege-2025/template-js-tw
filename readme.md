@@ -33,7 +33,7 @@ A set of lightweight DOM utility functions is included in `src/utils/`. Note tha
 | Function                        | Description                                    |
 | ------------------------------- | ---------------------------------------------- |
 | `get(target)`                   | Query a DOM element by selector                |
-| `create(el, classes)`           | Create a new DOM element with optional classes |
+| `create(element, classes)`      | Create a new DOM element with optional classes |
 | `set(element, target)`          | Append one or more elements to a target        |
 | `remove(target)`                | Remove a DOM element by selector or reference  |
 | `addClass(element, classes)`    | Add one or more classes to an element          |
