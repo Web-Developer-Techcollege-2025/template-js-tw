@@ -56,3 +56,7 @@ Note: `setHTML` does not sanitize content. Only use it with trusted HTML.
 | `npm run format:check` | Check formatting with Prettier   |
 
 If `npm run format:check` reports style issues on first clone, run `npm run format` once and re-run the check.
+
+## License
+
+MIT. See LICENSE.
